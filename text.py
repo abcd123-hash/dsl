@@ -50,3 +50,16 @@ if prediction[0] == 'spam':
     print("Prediction: spam")
 else:
     print("Prediction: ham")
+
+"""
+import pandas as pd
+
+# Load your space-separated file
+# sep=r'\s+' handles multiple spaces
+df = pd.read_csv("spam.csv", sep=r'\s+', encoding='latin-1', engine='python', names=["v1", "v2"])
+
+# Save it as a real CSV
+df.to_csv("spam_fixed.csv", index=False)
+
+print("Conversion complete! Use 'spam_fixed.csv' in your ML script.")
+"""
